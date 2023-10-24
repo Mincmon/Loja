@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-nome">Canto Gamer<span>.</span></h1>
+            </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar produto" oninput="buscarProdutos()">
+                <button onclick="buscarSite()">Buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <img src="carrinho.png" alt="">
+                </div>
+                <span id="cont-carrinho">0</span>
+            </div>
+            <div id="carrinho-itens" style="display: none;">
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor Total: R$0,00</span>
+                <button class="limpa" onclick="limparCarrinho()">Limpar Carrinho</button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+          <div class="produtos">
+    <div class="produto-linha">
+        <div class="produto">
+            <div class="imagem">
+                <img src="aground.jpg" alt="">
+                <div class="infos">
+                    <h3>Aground</h3>
+                    <p>R$46,99</p>
+                    <button onclick="addCarrinho('Aground', 46.99)">Adiconar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+        <div class="produto">
+            <div class="imagem">
+                <img src="dontStarve.jpg" alt="">
+                <div class="infos">
+                    <h3>Dont Starve Together</h3>
+                    <p>R$27,99</p>
+                    <button onclick="addCarrinho('Dont Starve Together', 27.99)">Adiconar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+        <div class="produto">
+            <div class="imagem">
+                <img src="hollowKnight.jpg" alt="">
+                <div class="infos">
+                    <h3>Hollow Knight</h3>
+                    <p>R$46,99</p>
+                    <button onclick="addCarrinho('Hollow Knight', 46.99)">Adiconar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="produto-linha">
+        <div class="produto">
+            <div class="imagem">
+                <img src="stardew.jpg" alt="">
+                <div class="infos">
+                    <h3>Stardew Valley</h3>
+                    <p>R$24,99</p>
+                    <button onclick="addCarrinho('Stardew Valley', 24.99)">Adiconar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+        <div class="produto">
+            <div class="imagem">
+                <img src="Terraria.jpg" alt="">
+                <div class="infos">
+                    <h3>Terraria</h3>
+                    <p>R$32,99</p>
+                    <button onclick="addCarrinho('Terraria', 32.99)">Adiconar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+        <div class="produto">
+            <div class="imagem">
+                <img src="theSurvivalists.jpg" alt="">
+                <div class="infos">
+                    <h3>The Survivalists</h3>
+                    <p>R$133,90</p>
+                    <button onclick="addCarrinho('The Survivalists', 133.90)">Adiconar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+
+        </div>
+    </main>
+    <script src="main.js"></script>
+
+
+
+
+
+
+
+    
+</body>
+</html>
+
+
+
+
